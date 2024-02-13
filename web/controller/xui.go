@@ -25,7 +25,7 @@ func (a *XUIController) initRouter(g *gin.RouterGroup) {
 	g.GET("/", a.index)
 	g.GET("/inbounds", a.inbounds)
 	g.GET("/settings", a.settings)
-	g.GET("/xray", a.xraySettings)
+	g.GET("/baby", a.xraySettings)
 
 	a.inboundController = NewInboundController(g)
 	a.settingController = NewSettingController(g)
